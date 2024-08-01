@@ -1,0 +1,18 @@
+version: '3.8'  # Specify the version of Docker Compose file format
+
+services:
+  postgres:
+    image: postgres:15  # Use the official PostgreSQL image
+    container_name: postgres_database
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "postgres"
+    ports:
+      - "5432:5432"                # Map port 5432 on the host to port 5432 in the container
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Use a named volume to persist data
+
+volumes:
+  postgres_data:
+    driver: local  # Use the local driver for the volume
