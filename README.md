@@ -20,11 +20,7 @@ A project is about to convert csv file into JSON and store data into database an
 
 ## API 
   ### / csv-to-json | POST
-  - Description :  
-
-        1. Converts the CSV file to JSON
-        2. formated the data and store into database
-        4. retunrn JSON format users.
+  - Description : Converts the CSV file to JSON , formated the data and store into database , retunrn JSON format users.
   - response :
 
         {
@@ -38,7 +34,7 @@ A project is about to convert csv file into JSON and store data into database an
         }
        
   ### /age-distribution | GET
-  - 
+  - In console the in table its showing
   - response :
         
         {
@@ -72,7 +68,7 @@ A project is about to convert csv file into JSON and store data into database an
       - Add database creditionals
       - run docker-compose file
 
-   - `npm install`
+   - ```npm install```
 
-   - `npm run dev`  or   `npm run build && npm start`
+   - ```npm run dev```  or   ```npm run build && npm start```
 
