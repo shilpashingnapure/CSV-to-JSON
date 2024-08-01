@@ -1,5 +1,5 @@
 
-# CSV To JSON convert
+# CSV To JSON converter
 
 
 ## Description
